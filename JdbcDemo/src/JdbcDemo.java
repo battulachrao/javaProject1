@@ -9,12 +9,12 @@ import java.util.Scanner;
 public class JdbcDemo {
 	
 	public static void main(String[] args) {
-		
+		System.out.println("Welcome to Employee Salary System");
 		try
 		{
 			String eName,eId;
         	int salary;
-        	System.out.println("Welcome to Employee Salary System");
+        	
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection c = DriverManager.getConnection("jdbc:mysql://localhost:3306/sys?characterEncoding=utf8", "root", "Reset@123");
 			Statement s =c.createStatement(); 
